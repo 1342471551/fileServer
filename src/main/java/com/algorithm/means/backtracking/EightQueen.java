@@ -41,7 +41,7 @@ public class EightQueen {
 
     //判断第row行第col列能否摆放
     boolean isValid(int row, int col) {
-        //拿到前面行摆放的皇后
+        //拿到前面行摆放的皇后，回溯后满足条件会覆盖上次cols中的值 所以可以重复利用cols数组
         for (int i = 0; i < row; i++) {
             //列 此列有皇后了返回false
             if (cols[i] == col) return false;
