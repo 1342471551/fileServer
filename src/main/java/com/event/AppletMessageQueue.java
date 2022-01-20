@@ -3,7 +3,7 @@ package com.event;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.event.EventListener;
+//import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -21,7 +21,7 @@ public class AppletMessageQueue<T> {
     @Resource
     ApplicationContext applicationContext;
 
-    @EventListener
+//    @EventListener
     public void messageConsumer(AppletMessage<T> message) {
         AppletMessageEnum code = AppletMessageEnum.getCode(message.getTopic());
         AppletMessageListener<T> appletMessageListener = null;

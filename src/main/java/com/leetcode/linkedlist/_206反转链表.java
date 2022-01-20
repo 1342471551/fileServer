@@ -2,7 +2,7 @@ package com.leetcode.linkedlist;
 
 /**
  * @author wangyj
- * @Description: (https://leetcode-cn.com/problems/reverse-linked-list/)
+ * @Description: (https : / / leetcode - cn.com / problems / reverse - linked - list /)
  * @date 2021/3/29 17:52
  */
 public class _206反转链表 {
