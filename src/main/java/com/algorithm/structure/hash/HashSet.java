@@ -8,7 +8,7 @@ import com.algorithm.structure.set.Set;
  * @Description: (使用哈希表实现set)
  * @date 2021/4/22 11:31
  */
-public class HashSet<E> implements Set<E> {
+public class HashSet<E, I extends Number> implements Set<E> {
 
     private HashMap<E, Object> map = new HashMap<>();
 
